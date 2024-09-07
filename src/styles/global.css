@@ -1,0 +1,81 @@
+@import url('./prism-vsc-dark-plus.css');
+@import url('./blog-detail.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0071ea;
+  --primary-dark: #0348ad;
+  --primary-lightest: #e0f2fe;
+  --secondary: #0ccccc;
+  --secondary-dark: #149f9f;
+  --light: #6b7280;
+  --lightest: #e5e7eb;
+}
+/* ::-webkit-scrollbar {
+  width: 12px;
+} */
+/* ::-webkit-scrollbar-thumb {
+  background-color: var(--dark-slate);
+  border: 3px solid var(--navy);
+  border-radius: 10px;
+} */
+html {
+  background-color: #fff;
+  letter-spacing: 0.5px;
+  scroll-behavior: smooth;
+}
+a,
+button {
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.hover-effect {
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+  box-shadow: '0px 0px 8px 1px rgba(0,0,0,0.1)';
+}
+.hover-effect:hover {
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.16);
+  transform: scale(1.02);
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+.fade-in-enter {
+  opacity: 0;
+}
+.fade-in-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.fade-in-exit {
+  opacity: 1;
+}
+.fade-in-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+/* .particle-container {
+  height: 100vh;
+}
+
+#tsparticles {
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+} */
